@@ -1,0 +1,117 @@
+body {
+    background: linear-gradient(to bottom, #24466e, #08192D 50%, #08192D 50%);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='pattern' patternUnits='userSpaceOnUse' width='60' height='60'%3E%3Cpath d='M59 29.5c0-14.912-12.088-27-27-27S5 14.588 5 29.5c0 14.911 12.088 27 27 27s27-12.089 27-27zM2.525 29.5C2.525 13.289 15.289.525 31.5.525S60.475 13.289 60.475 29.5 47.711 58.475 31.5 58.475 2.525 45.711 2.525 29.5z' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23pattern)'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-color: #08192D;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+/* 卡片樣式 */
+.card {
+    
+    width: 320px;
+    height: 200px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 100%; /* 限制卡片最大寬度 */
+    max-height: 100%; /* 限制卡片最大高度 */
+    overflow: hidden; /* 防止內容超出卡片 */
+    padding: 12px;
+  }
+  
+  /* 名字樣式 */
+  .name {
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* 職稱樣式 */
+  .job-title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  /* 個人網站樣式 */
+  .website {
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .website::before {
+    content: "\25B8";
+    margin-right: 10px;
+  }
+  
+  /* 連絡信箱樣式 */
+  .email {
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .email::before {
+    content: "\25B8";
+    margin-right: 10px;
+  }
+  
+  /* 手機號碼樣式 */
+  .phone {
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .phone::before {
+    content: "\25B8";
+    margin-right: 10px;
+  }
+  
+  /* 超連結樣式 */
+  a {
+    color: #FFCD05;
+    text-decoration: none;
+  }
+  
+  /* 主視覺色系 */
+  .card {
+    border: 2px solid #FFCD05;
+  }
+  
+  /* 卡片 hover 效果 */
+  .card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    top: 45%;
+  }
+  
+  /* 背景圖形樣式 */
+  .bg-shape {
+    background-image: url('https://i.imgur.com/Q0sL7pC.png');
+    background-size: cover;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  
+ /* 限制名片寬度不超過螢幕寬度 */
+ @media (max-width: 576px) {
+    .card {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  }
