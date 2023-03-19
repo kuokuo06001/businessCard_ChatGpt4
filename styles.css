@@ -110,7 +110,7 @@ body {
  /* 限制名片寬度不超過螢幕寬度 */
  @media (max-width: 576px) {
     .card {
-      width: 100%;
+      width: 80%;
       height: auto;
       margin-top: 20px;
     }
